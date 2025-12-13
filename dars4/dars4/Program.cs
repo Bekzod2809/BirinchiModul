@@ -77,7 +77,25 @@ internal class Program
         //}
         //Console.WriteLine(yigindi);
 
-        int num = 123;
-        Console.WriteLine(num.ToString().Length);
+        //int num = 123;
+        //Console.WriteLine(num.ToString().Length);
+
+        //static int GetCountOfCapitalLetter(string s)
+        //{
+        //    int count = 0;
+        //    for (var i = 0; i < s.Length; i++)
+        //    {
+        //        if (char.IsUpper(s[i]))
+        //        {
+        //            count++;
+        //        }
+        //    }
+
+        //    return count;
+        //}
+        //var str = "Salom Dunyo! Hello World! G13 .net";
+        //Console.WriteLine(GetCountOfCapitalLetter(str));
+
+
     }
 }
