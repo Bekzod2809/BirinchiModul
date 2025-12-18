@@ -47,6 +47,10 @@ internal class Program
         //    Console.Clear();
 
 
+
+
+
+
         List<int> list = new List<int> { 1, 2, 3, 4, 5, 5, 510, 21 };
 
         //Console.WriteLine(TheThereDigitCount(list));             1-chi mashq
@@ -57,7 +61,7 @@ internal class Program
 
         //Console.WriteLine(ThereAndSevenElement(list));           4-chi mashq
 
-        Console.WriteLine(JuftXonaliToqElement(list));            //5 -chi mashq
+        //Console.WriteLine(JuftXonaliToqElement(list));            //5 -chi mashq
 
     }
 
@@ -73,18 +77,18 @@ internal class Program
 
 
 
-    static int JuftXonaliToqElement(List<int> ints)
-    {
-        var count = 0;
-        foreach (var x in ints)
-        {
-            if (Math.Abs(x) >= 10 && Math.Abs(x) <= 99)
-            {
-                count++;
-            }
-        }
-        return count;
-    }
+    //static int JuftXonaliToqElement(List<int> ints)
+    //{
+    //    var count = 0;
+    //    foreach (var x in ints)
+    //    {
+    //        if (Math.Abs(x) >= 10 && Math.Abs(x) <= 99)
+    //        {
+    //            count++;
+    //        }
+    //    }
+    //    return count;
+    //}
 
 
     //static int ThereAndSevenElement(List<int> ints)
