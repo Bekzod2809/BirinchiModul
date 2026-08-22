@@ -1,0 +1,50 @@
+--------------- School --------------------
+namespace dars11;
+
+internal class Program
+{
+    static void Main(string[] args)
+    {
+        School school = CreateSchool();
+        FillSchoolObject(school);
+        Console.WriteLine();
+        Displays(school);
+        Console.WriteLine();
+        Console.WriteLine(Count(school));
+    }
+    static School CreateSchool()
+    {
+        School school = new School();
+        return school;
+    }
+
+    static void FillSchoolObject(School school)
+    {
+        Console.Write("Maktab raqami : ");
+        school.Number = int.Parse(Console.ReadLine());
+        Console.Write("Maktab nomi : ");
+        school.Nomi = Console.ReadLine();
+        Console.Write("Maktab manzili : ");
+        school.Location = Console.ReadLine();
+        Console.Write("Maktab sig'imi : ");
+        school.Copacity = int.Parse(Console.ReadLine());
+        Console.Write("Maktabdagi talabalar nomi : ");
+        school.CurrentStudntCount = int.Parse(Console.ReadLine());
+    }
+    static void Displays(School school)
+    {
+        Console.WriteLine("Maktab raqami : " + school.Number);
+        Console.WriteLine("Maktab nomi : " + school.Nomi);
+        Console.WriteLine("Maktab manzili : " + school.Location);
+        Console.WriteLine("Maktab sig'imi : " + school.Copacity);
+        Console.WriteLine("Maktab talabalar soni : " + school.CurrentStudntCount);
+    }
+
+
+    static int Count(School school)
+    {
+        var res = school.Copacity - school.CurrentStudntCount;
+
+        return res;
+    }
+}
